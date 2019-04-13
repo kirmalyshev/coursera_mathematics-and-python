@@ -1,0 +1,9 @@
+anaconda:
+    dockerfile: docker/Dockerfile
+    build: .
+    volumes:
+      - ./notebooks:/opt/notebooks
+    ports:
+      - 8888:8888
+    expose:
+      - 8888
